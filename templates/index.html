@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Wine Quality Project</title>
+
+    <link rel="stylesheet" href="static/fontawesome-5.5/css/all.min.css">
+    <link rel="stylesheet" href="static/slick/slick.css">
+    <link rel="stylesheet" href="static/slick/slick-theme.css">
+    <link rel="stylesheet" href="static/magnific-popup/magnific-popup.css">
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/wine_quality.css">
+    <link rel="stylesheet" href="static/css/styles.css">
+
+    <!--
+Tooplate 2117 Infinite Loop
+https://www.tooplate.com/view/2117-infinite-loop
+-->
+
+</head>
+
+<body>
+    <!-- Hero section -->
+    <section id="winequality" class="text-white tm-font-big tm-parallax">
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-md tm-navbar" id="tmNav">
+            <div class="container">
+                <div class="tm-next">
+                    <a href="#winequality" class="navbar-brand">Raise a Glass</a>
+                </div>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars navbar-toggler-icon"></i>
+          </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link tm-nav-link" href="#winequality">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link tm-nav-link" href="#aboutwine">Winemakers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link tm-nav-link" href="#winecomponents">Wine Components</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link tm-nav-link" href="#relationships">Relationships</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link tm-nav-link" href="#predictability">Predictability</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link tm-nav-link" href="#designyourown">Design Your Own</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="text-center tm-hero-text-container">
+            <div class="tm-hero-text-container-inner">
+                <h2 class="tm-hero-title">Raise a Glass</h2>
+                <p class="tm-hero-subtitle text-center">
+                    Predicting Wine Quality
+                    <br>What determines an excellent wine?
+                </p>
+            </div>
+        </div>
+
+        <div class="tm-next tm-intro-next">
+            <a href="#aboutwine" class="text-center tm-down-arrow-link">
+                <i class="fas fa-2x fa-arrow-down tm-down-arrow"></i>
+            </a>
+        </div>
+    </section>
+
+    <section id="aboutwine" class="tm-section-pad-top">
+
+        <div class="container">
+
+            <div class="row tm-content-box">
+                <!-- first row -->
+                <div class="col-lg-12 col-xl-12">
+                    <div class="tm-intro-text-container">
+                        <h2 class="tm-text-primary mb-4 tm-section-title">So You Wanna Make Wine?</h2>
+                        <p class="mb-4 tm-intro-text">
+                            Tons of work goes into producing just one bottle of wine.  The best ingredients, the right fermentation environment and time.
+                            It's a spin of the wheel.</p>
+                    </div>
+                </div>
+
+            </div>
+            <!-- first row -->
+
+            <div class="row tm-content-box">
+                <!-- second row -->
+                <div class="col-lg-1">
+                    <img class="tm-icon" src="/static/img/grapeicon.png" height = 75 width = 75>
+                </div>
+                <div class="col-lg-5">
+                    <div class="tm-intro-text-container">
+                        <h2 class="tm-text-primary mb-4">High Quality Grapes</h2>
+                        <p class="mb-4 tm-intro-text">
+                            Grapes!  The most important ingredient in crafting wine!  Growing your own can be a huge hassle, but there are other options.
+                            These options include purchasing grapes either from small growers or local vineyards with leftovers.  
+                            The goal is to use quality grapes and to be open to variety in order to experiment.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-1">
+                    <img class="tm-icon" src="/static/img/fermenticon.png" height = 75 width = 75>
+                </div>
+                <div class="col-lg-5">
+                    <div class="tm-intro-text-container">
+                        <h2 class="tm-text-primary mb-4">Fermentation</h2>
+                        <p class="mb-4 tm-intro-text">
+                            The interaction between the sugar in the grapes and yeast is the main step in creating wine.  
+                            There are different kinds of yeast to be aware of since some can help create good quality wine while others result in a less
+                            desirable product. Another important concept is the environment you provide and length of fermentation time.</p>
+                    </div>
+                </div>
+
+            </div>
+            <!-- second row -->
+
+            <div class="row tm-content-box">
+                <!-- third row -->
+                <div class="col-lg-12 col-xl-12">
+                    <div class="tm-intro-text-container">
+                        <h2 class="tm-text-primary mb-4 tm-section-title">We Can Help!</h2>
+                        <p class="mb-4 tm-intro-text">
+                            With a bit of study of the physicochemical components of wine that are the result of all your efforts, you can predict the success of your product.
+                            We used the <a href="https://archive.ics.uci.edu/ml/datasets/wine+quality" target="_blank">Vinho Verde red wine dataset</a>, from the north of Portugal,
+                            to study those components and how they can be used to make those predictions.</p>
+                    </div>
+                </div>
+
+
+            </div>
+            <!-- third row -->
+            <div class="row tm-content-box">
+                <!-- fourth row -->
+                <div class="col-lg-5">
+                </div>
+                <div class="col-lg-2">
+                    <div class="tm-continue">
+                        <a href="#winecomponents" class="tm-intro-text tm-btn-primary">Let's Go!</a>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="winecomponents" class="tm-section-pad-top tm-parallax-2">
+        <div class="container tm-winecomponents-content">
+            <div class="row">
+                <div class="col-lg-12 tm-content-box">
+                    <h2 class="text-white text-center mb-4 tm-section-title">Wine Components</h2>
+                    <p class="mb-4 tm-intro-text text-center">
+                        Get familiar with the physicochemical components of wine.
+                    </p>
+                    <div class="mx-auto tm-gallery-container tm-gallery-container-2" style="padding-top:0">
+                        <div class="tm-winecomponents-carousel">
+                            <figure class="tm-winecomponents-item">
+                                <img src="/static/img/Fixed Acidity - 220px-Tartaric-acid-3D-balls-new.jpg" alt="Image" class="img-fluid mx-auto">
+                                <figcaption>Fixed Acidity</figcaption>
+                                <blockquote>Titratable acidity, sometimes referred to as fixed acidity, is a measurement of the total concentration of titratable acids and free hydrogen ions present in your wine. A litmus paper can be used to identify whether a given
+                                    solution is acidic or basic. The most common titratable acids are tartaric, malic, citric and carbonic acid. These acids, along with many more in smaller quantities, either occur naturally in the grapes or are created
+                                    through the fermentation process.</blockquote>
+                            </figure>
+
+                            <figure class="tm-winecomponents-item">
+                                <img src="/static/img/acetic_acidity-Volatile-new.jpg" alt="Image" class="img-fluid mx-auto">
+                                <figcaption>Volatile Acidity</figcaption>
+                                <blockquote>Volatile acidity is mostly caused by bacteria in the wine creating acetic acid — the acid that gives vinegar its characteristic flavor and aroma — and its byproduct, ethyl acetate. Volatile acidity could be an indicator
+                                    of spoilage, or errors in the manufacturing processes — caused by things like damaged grapes, wine exposed to air, and so on. This causes acetic acid bacteria to enter and thrive, and give rise to unpleasant tastes
+                                    and smells. Wine experts can often tell this just by smelling it!</blockquote>
+                            </figure>
+
+                            <figure class="tm-winecomponents-item">
+                                <img src="/static/img/Citric-acid new-new.jpg" alt="Image" class="img-fluid mx-auto">
+                                <figcaption>Citric Acid</figcaption>
+                                <blockquote>Citric acid is generally found in very small quantities in wine grapes. It acts as a preservative and is added to wines to increase acidity, complement a specific flavor or prevent ferric hazes. It can be added to finished
+                                    wines to increase acidity and give a “fresh” flavor. Excess addition, however, can ruin the taste.</blockquote>
+                            </figure>
+
+                            <figure class="tm-winecomponents-item">
+                                <img src="/static/img/Residual Sugar-new.jpg" alt="Image" class="img-fluid mx-auto">
+                                <figcaption>Residual Sugar</figcaption>
+                                <blockquote>Residual Sugar, or RS for short, refers to any natural grape sugars that are leftover after fermentation ceases (whether on purpose or not). The juice of wine grapes starts out intensely sweet, and fermentation uses up
+                                    that sugar as the yeasts feast upon it. During winemaking, yeast typically converts all the sugar into alcohol making a dry wine. However, sometimes not all the sugar is fermented by the yeast, leaving some sweetness
+                                    leftover. To make a wine that tastes good, the key is to have a perfect balance between the sweetness and the sourness in the drink.</blockquote>
+                            </figure>
+
+                            <figure class="tm-winecomponents-item">
+                                <img src="/static/img/220px-Sodium-chloride-3D-ionic-new.jpg" alt="Image" class="img-fluid mx-auto">
+                                <figcaption>Chlorides</figcaption>
+                                <blockquote>The amount of chlorides present in a wine is usually an indicator of its “saltiness.” This is usually influenced by the territory where the wine grapes grew, cultivation methods, and also the grape type. Too much saltiness
+                                    is considered undesirable. The right proportion can make the wine more savory.</blockquote>
+                            </figure>
+
+                            <figure class="tm-winecomponents-item">
+                                <img src="/static/img/180px-Sulfur-dioxide-3D-vdW-new.jpg" alt="Image" class="img-fluid mx-auto">
+                                <figcaption>Sulfur Dioxide</figcaption>
+                                <blockquote>Sulfur dioxide exists in wine in free and bound forms, and the combinations are referred to as total SO2. It’s the most common preservative used, usually added by wine makers to protect the wine from negative effects of
+                                    exposure to air and oxygen. Wines with added sulphur dioxide contents usually have “Contains Sulphites” on their labels. It acts as a sanitizing agent — adding it usually kills unwanted bacteria or yeast that might
+                                    enter the wine and spoil its taste and aroma. It was first used in winemaking by the Romans, when they discovered that burning sulfur candles inside empty wine vessels keeps them fresh and free from vinegar smell. Pretty
+                                    neat, huh?</blockquote>
+                            </figure>
+
+                            <figure class="tm-winecomponents-item">
+                                <img src="/static/img/Density-new.jpg" alt="Image" class="img-fluid mx-auto">
+                                <figcaption>Density</figcaption>
+                                <blockquote>Also known as specific gravity, it can be used to measure the alcohol concentration in wines. During fermentation, the sugar in the juice is converted into ethanol with carbon dioxide as a waste gas. Monitoring the density
+                                    during the process allows for optimal control of this conversion step for highest quality wines. Sweeter wines generally have higher densities.</blockquote>
+                            </figure>
+
+                            <figure class="tm-winecomponents-item">
+                                <img src="/static/img/PH new.jpg" alt="Image" class="img-fluid mx-auto">
+                                <figcaption>pH</figcaption>
+                                <blockquote>PH is the measure of the degree of relative acidity versus the relative alkalinity of any liquid, on a scale of 0 to 14, with 7 being neutral. Winemakers use pH as a way to measure ripeness in relation to acidity. Low pH
+                                    wines will taste tart and crisp, while higher pH wines are more susceptible to bacterial growth.</blockquote>
+                            </figure>
+
+                            <figure class="tm-winecomponents-item">
+                                <img src="/static/img/Sulfate-3D-balls-new.jpg" alt="Image" class="img-fluid mx-auto">
+                                <figcaption>Sulfates</figcaption>
+                                <blockquote>Sulfates are salts of sulfuric acid. They aren’t involved in wine production, but some beer makers use calcium sulfate — also known as brewers’ gypsum — to correct mineral deficiencies in water during the brewing process.
+                                    It also adds a bit of a “sharp” taste.</blockquote>
+                            </figure>
+
+                            <figure class="tm-winecomponents-item">
+                                <img src="/static/img/Alcohol-new.jpg" alt="Image" class="img-fluid mx-auto">
+                                <figcaption>Alcohol</figcaption>
+                                <blockquote>Alcohol is formed as a result of yeast converting sugar during the fermentation process. </blockquote>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tm-bg-overlay"></div>
+    </section>
+
+    <section id="relationships" class="tm-section-pad-top">
+
+        <div class="container">
+
+            <div class="row tm-content-box">
+                <!-- first row -->
+                <div class="col-lg-12 col-xl-12">
+                    <div class="tm-intro-text-container">
+                        <h2 class="tm-text-primary mb-4 tm-section-title">Relationships</h2>
+                        <p class="mb-4 tm-intro-text">
+                            Gain insight from examining how each component relates to the quality score, and how each component relates to the others.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- first row -->
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <!-- Dropdown menu -->
+                    <p id="chart-caption">Use the dropdown to change the charted component.</p>
+                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect" onchange="optionChanged(this.value)">
+						<option selected value="fixed acidity">Quality vs Fixed Acidity</option>
+						<option value="volatile acidity">Quality vs Volatile Acidity</option>
+						<option value="citric acid">Quality vs Citric Acid</option>
+						<option value="residual sugar">Quality vs Residual Sugar</option>
+						<option value="chlorides">Quality vs Chlorides</option>
+						<option value="free sulfur dioxide">Quality vs Free Sulfur Dioxide</option>
+						<option value="total sulfur dioxide">Quality vs Total Sulfur Dioxide</option>
+						<option value="density">Quality vs Density</option>
+						<option value="pH">Quality vs pH</option>
+						<option value="sulfates">Quality vs Sulfates</option>
+						<option value="alcohol">Quality vs Alcohol</option>
+					</select>
+                    <div id="bar"></div>
+                </div>
+                <div class="col-lg-6">
+                    <p class="text-center">Correlation Matrix</p>
+                    <img id="corr_viz" src="/static/img/corr_matrix.png" alt="correlation matrix" class="img-fluid">
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section id="gallery" class="tm-section-pad-top">
+        <div class="container tm-container-gallery">
+            <div class="row">
+                <div class="text-center col-12">
+                    <h2 class="tm-text-primary tm-section-title mb-4">Component Correlation</h2>
+                    <p class="mb-4 tm-intro-text">
+                        As we saw in the grid above, components not only affect the quality, but may also relate to one another. Let's take a closer look at some of these relationships.
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="mx-auto tm-gallery-container">
+                        <div class="grid tm-gallery">
+                            <a href="/static/img/1.png" >
+                                <figure class="effect-honey tm-gallery-item">
+                                    <img src="/static/img/1.png" alt="Image 1" class="img-fluid" height=900  width=900>
+                                    <figcaption>
+                                        <h2><i><span>fixed acidity & citric acid</span><br>Moderate correlation</i></h2>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                            <a href="/static/img/2.png">
+                                <figure class="effect-honey tm-gallery-item">
+                                    <img src="/static/img/2.png" alt="Image 2" class="img-fluid">
+                                    <figcaption>
+                                        <h2><i><span>fixed acidity & density</span><br>Moderate correlation</i></h2>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                            <a href="/static/img/4.png">
+                                <figure class="effect-honey tm-gallery-item">
+                                    <img src="/static/img/4.png" alt="Image 4" class="img-fluid">
+                                    <figcaption>
+                                        <h2><i><span>volatile acidity & citric acid</span><br>Moderate correlation</i></h2>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                            <a href="/static/img/6.png">
+                                <figure class="effect-honey tm-gallery-item">
+                                    <img src="/static/img/6.png" alt="Image 6" class="img-fluid">
+                                    <figcaption>
+                                        <h2><i><span>density & alcohol</span><br>Weak correlation</i></h2>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                            <a href="/static/img/7.png">
+                                <figure class="effect-honey tm-gallery-item">
+                                    <img src="/static/img/7.png" alt="Image 7" class="img-fluid">
+                                    <figcaption>
+                                        <h2><i><span>chlorides & residual sugar</span><br>No correlation</i></h2>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                            <a href="/static/img/8.png">
+                                <figure class="effect-honey tm-gallery-item">
+                                    <img src="/static/img/8.png" alt="Image 8" class="img-fluid">
+                                    <figcaption>
+                                        <h2><i><span>total sulfur dioxide & density</span><br>No correlation</i></h2>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                            <a href="/static/img/9.png">
+                                <figure class="effect-honey tm-gallery-item">
+                                    <img src="/static/img/9.png" alt="Image 9" class="img-fluid">
+                                    <figcaption>
+                                        <h2><i><span>volatile acidity & sulfates</span><br>No correlation</i></h2>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Predicability -->
+
+    <section id="predictability" class="tm-section-pad-top">
+
+        <div class="container">
+
+            <div class="row tm-content-box">
+                <!-- first row -->
+                <div class="col-lg-12 col-xl-12">
+                    <div class="tm-intro-text-container">
+                        <h2 class="tm-text-primary mb-4 tm-section-title">Predictability</h2>
+                        <p class="mb-4 tm-intro-text">
+                            So how do we help you design a killer wine?  It's in the math.</p>
+                    </div>
+                </div>
+
+            </div>
+            <!-- first row -->
+
+            <div class="row tm-content-box">
+                <!-- second row -->
+
+                <div class="col-lg-4">
+                    <div class="tm-intro-text-container">
+                        <h2 class="tm-text-primary mb-4">Machine Learning</h2>
+                        <p class="tm-intro-text">
+                            Machine learning is the practice of using statistical algorithms to teach a computer to imitate the way
+                            humans process information.  We can use it in wine production by teaching the computer to look at how physicochemical 
+                            components in wine relate to the quality scores given to them by experts in the field.</p>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4">
+                    <div class="tm-intro-text-container">
+                        <h2 class="tm-text-primary mb-4">Accuracy</h2>
+                        <p class="tm-intro-text">
+                            We trained a lot of different machine learning models on the Vinho Verdi red wine dataset, and we got our best accuracy score from 
+                            the <a href="https://towardsdatascience.com/understanding-random-forest-58381e0602d2"><strong>Random Forests Classifier</strong></a> model.  This model is like a really complex flow chart, with many decision
+                            trees combined into one.  More trees means better predictions.  Our model is 95% accurate. 
+                            </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="tm-intro-text-container">
+                        <h2 class="tm-text-primary mb-4">Confusion Matrix?</h2>
+                        <p class="tm-intro-text">
+                             A confusion matrix is a way to visualize the accuracy of your model.  Actual quality values are mapped
+                            against the quality values predicted by our model.  As you can see, our model is pretty darned accurate!</p>
+
+                    </div>
+                </div>
+
+            </div>
+            <!-- second row -->
+
+            <div class="row tm-content-box">
+                <!-- third row -->
+                <div class="col-lg-4">
+                    <img class="predict-viz" src="/static/img/machinelearn.jpg" alt="machine learning" heigth=300 width=350 style="margin-top: 45px;">
+                </div>
+                <div class="col-lg-4">
+                    <div class="tm-viz">
+                        <a href="https://towardsdatascience.com/understanding-random-forest-58381e0602d2" target=_blank>
+                            <img class="predict-viz" src="/static/img/randomforest2.jpeg" alt="random forest" height=250 width=250 style="margin-top: 65px;">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="tm-viz">
+                        <img class="predict-viz" src="/static/img/con_matrix.png" alt="confusion matrix" height=300 width=350>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Design Your Own -->
+    <section id="designyourown" class="tm-section-pad-top tm-parallax-2">
+
+        <div class="container tm-container-designyourown">
+
+            <div class="row">
+
+                <div class="text-center col-12">
+                    <h2 class="tm-section-title mb-4">Design Your Own</h2>
+                    <p class="mb-5 text-center">
+                        See if you can come up with a quality combination.
+                    </p>
+                </div>
+
+                <div class="col-sm-12 col-md-6">
+                    <form action="" method="get">
+                        <label for="fixedacidity">Fixed Acidity (g/dm^3):</label>
+                        <input id="fixedacidity" name="Fixed Acidity" type="text" class="tm-input" required>
+                        <label for="volatileacidity">Volatile Acidity (g/dm^3):</label>
+                        <input id="volatileacidity" name="Volatile Acidity" type="text" class="tm-input" required>
+                        <label for="citricacid">Citric Acid (g/dm^3):</label>
+                        <input id="citricacid" name="Citric Acid" type="text" class="tm-input" required>
+                        <label for="residualsugar">Residual Sugar (g/dm^3):</label>
+                        <input id="residualsugar" name="Residual Sugar" type="text" class="tm-input" required>
+                        <label for="chlorides">Chlorides (g/dm^3):</label>
+                        <input id="chlorides" name="Chlorides" type="text" class="tm-input" required>
+                        <label for="freesulfurdi">Free Sulfur Dioxide (mg/dm^3):</label>
+                        <input id="freesulfurdi" name="Free Sulfur Dioxide" type="text" class="tm-input" required>
+                        <label for="totsulfurdi">Total Sulfur Dioxide (mg/dm^3):</label>
+                        <input id="totsulfurdi" name="Total Sulfur Dioxide" type="text" class="tm-input" required>
+                        <label for="density">Density (g/dm^3):</label>
+                        <input id="density" name="Density" type="text" class="tm-input" required>
+                        <label for="pH">pH (0 - 14):</label>
+                        <input id="pH" name="pH" type="text" class="tm-input" required>
+                        <label for="sulfates">Sulfates (g/dm^3):</label>
+                        <input id="sulfates" name="Sulfates" type="text" class="tm-input" required>
+                        <label for="alcohol">Alcohol (% vol):</label>
+                        <input id="alcohol" name="Alcohol" type="text" class="tm-input" required>
+                        <p id="errorMsg"></p>
+                        <button id="submit-test" type="submit" class="btn tm-btn-submit floated">Submit</button>
+                        <button id="clear-fields" type="submit" class="btn tm-btn-clear floated">Clear Fields</button>
+                    </form>
+                </div>
+
+
+                <div class="col-sm-12 col-md-6">
+                    <p class="table-title text-center">Wine Quality Score</p>
+                    <div class="designyourown-item" id="gauge">
+                    </div>
+                </div>
+
+
+            </div>
+            <!-- row ending -->
+
+        </div>
+
+
+
+        <footer class="text-center small tm-footer">
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-12 col-xl-3 mb-4">
+                    <div class="media tm-bg-transparent-black tm-border-white">
+                        <div class="media-body">
+                            <p class="text-center">Tan Lin Hung</p>
+                            <div class="row">
+                                <div class="col-sm-4">
+                                </div>
+                                <div class="col-sm-2">
+                                    <p><a href="https://www.linkedin.com/in/tan-lin-hung-91a799125" target="_blank" title="Tan Lin's LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                                        <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                                      </svg></a></p>
+                                </div>
+                                <div class="col-sm-2">
+                                    <p><a href="https://github.com/sallyyy0412" target="_blank" title="Tan Lin's GitHub"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                                      </svg></a></p>
+                                </div>
+                                <div class="col-sm-4">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-12 col-xl-3 mb-4">
+                    <div class="media tm-bg-transparent-black tm-border-white">
+                        <div class="media-body">
+                            <p class="text-center">Annette Broeren</p>
+                            <div class="row">
+                                <div class="col-sm-4">
+                                </div>
+                                <div class="col-sm-2">
+                                    <p><a href="https://www.linkedin.com/in/annette-broeren-a3b3b422" target="_blank" title="Annette's LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                                        <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                                      </svg></a></p>
+                                </div>
+                                <div class="col-sm-2">
+                                    <p><a href="https://github.com/abroeren" target="_blank" title="Annette's GitHub"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                                      </svg></a></p>
+                                </div>
+                                <div class="col-sm-4">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-12 col-xl-3 mb-4">
+                    <div class="media tm-bg-transparent-black tm-border-white">
+                         <div class="media-body">
+                            <p class="text-center">Rick Spitzer</p>
+                            <div class="row">
+                                <div class="col-sm-4">
+                                </div>
+                                <div class="col-sm-2">
+                                    <p><a href="https://www.linkedin.com/in/rick-spitzer" target="_blank" title="Annette's LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                                        <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                                      </svg></a></p>
+                                </div>
+                                <div class="col-sm-2">
+                                    <p><a href="https://github.com/pspitzer86" target="_blank" title="Annette's GitHub"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                                      </svg></a></p>
+                                </div>
+                                <div class="col-sm-4">
+                                </div>
+                            </div>	
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-12 col-xl-3 mb-4">
+                    <div class="media tm-bg-transparent-black tm-border-white">
+                        <div class="media-body">
+                            <p class="text-center">Kate Spitzer</p>
+                            <div class="row">
+                                <div class="col-sm-4">
+                                </div>
+                                <div class="col-sm-2">
+                                    <p><a href="https://www.linkedin.com/in/kate-spitzer" target="_blank" title="Annette's LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                                        <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                                      </svg></a></p>
+                                </div>
+                                <div class="col-sm-2">
+                                    <p><a href="https://github.com/kmspitzer" target="_blank" title="Annette's GitHub"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                                      </svg></a></p>
+                                </div>
+                                <div class="col-sm-4">
+                                </div>
+                            </div>		
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <p class="mb-0 text-center">
+                <a href="https://kmspitzer.github.io/final-wineproject/" target="_blank" title="README">Project README</a></p> 
+            <br>
+            <p class="mb-0 text-center">
+                Copyright &copy; 2021 UCSD Data Science . <a rel="nofollow" href="https://www.tooplate.com" title="HTML templates">Designed by TOOPLATE</a></p>
+            <p class="mb-0 text-center">
+                P. Cortez, A. Cerdeira, F. Almeida, T. Matos and J. Reis.<br>
+                Modeling wine preferences by data mining from physicochemical properties. In Decision Support Systems, Elsevier, 47(4):547-553, 2009.</p>
+            <a href="https://www.freepik.com/vectors/background">Background vector created by starline - www.freepik.com</a>
+        </footer>
+
+    </section>
+
+    <script src="static/js/jquery-1.9.1.min.js"></script>
+    <script src="static/slick/slick.min.js"></script>
+    <script src="static/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script src="static/js/easing.min.js"></script>
+    <script src="static/js/jquery.singlePageNav.min.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="static/js/gauge.js"></script>
+    <script src="static/js/app.js"></script>
+    <script>
+        function getOffSet() {
+            var _offset = 450;
+            var windowHeight = window.innerHeight;
+
+            if (windowHeight > 500) {
+                _offset = 400;
+            }
+            if (windowHeight > 680) {
+                _offset = 300
+            }
+            if (windowHeight > 830) {
+                _offset = 210;
+            }
+
+            return _offset;
+        }
+
+        function setParallaxPosition($doc, multiplier, $object) {
+            var offset = getOffSet();
+            var from_top = $doc.scrollTop(),
+                bg_css = 'center ' + (multiplier * from_top - offset) + 'px';
+            $object.css({
+                "background-position": bg_css
+            });
+        }
+
+        // Parallax function
+        // Adapted based on https://codepen.io/roborich/pen/wpAsm        
+        var background_image_parallax = function($object, multiplier, forceSet) {
+            multiplier = typeof multiplier !== 'undefined' ? multiplier : 0.5;
+            multiplier = 1 - multiplier;
+            var $doc = $(document);
+            // $object.css({"background-attatchment" : "fixed"});
+
+            if (forceSet) {
+                setParallaxPosition($doc, multiplier, $object);
+            } else {
+                $(window).scroll(function() {
+                    setParallaxPosition($doc, multiplier, $object);
+                });
+            }
+        };
+
+        var background_image_parallax_2 = function($object, multiplier) {
+            multiplier = typeof multiplier !== 'undefined' ? multiplier : 0.5;
+            multiplier = 1 - multiplier;
+            var $doc = $(document);
+            $object.css({
+                "background-attachment": "fixed"
+            });
+
+            $(window).scroll(function() {
+                if ($(window).width() > 768) {
+                    var firstTop = $object.offset().top,
+                        pos = $(window).scrollTop(),
+                        yPos = Math.round((multiplier * (firstTop - pos)) - 186);
+
+                    var bg_css = 'center ' + yPos + 'px';
+
+                    $object.css({
+                        "background-position": bg_css
+                    });
+                } else {
+                    $object.css({
+                        "background-position": "center"
+                    });
+                }
+            });
+        };
+
+        $(function() {
+            // Hero Section - Background Parallax
+            background_image_parallax($(".tm-parallax"), 0.30, false);
+            background_image_parallax_2($("#designyourown"), 0.80);
+            background_image_parallax_2($("#winecomponents"), 0.80);
+
+            // Handle window resize
+            window.addEventListener('resize', function() {
+                background_image_parallax($(".tm-parallax"), 0.30, true);
+            }, true);
+
+            // Detect window scroll and update navbar
+            $(window).scroll(function(e) {
+                if ($(document).scrollTop() > 120) {
+                    $('.tm-navbar').addClass("scroll");
+                } else {
+                    $('.tm-navbar').removeClass("scroll");
+                }
+            });
+
+            // Close mobile menu after click 
+            $('#tmNav a').on('click', function() {
+                $('.navbar-collapse').removeClass('show');
+            })
+
+            // Scroll to corresponding section with animation
+            $('#tmNav').singlePageNav({
+                'easing': 'easeInOutExpo',
+                'speed': 600
+            });
+
+            // Add smooth scrolling to all links
+            // https://www.w3schools.com/howto/howto_css_smooth_scroll.asp
+            $("a").on('click', function(event) {
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    var hash = this.hash;
+
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 600, 'easeInOutExpo', function() {
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+
+            // Pop up
+            $('.tm-gallery').magnificPopup({
+                delegate: 'a',
+                type: 'image',
+                gallery: {
+                    enabled: true
+                }
+            });
+
+            $('.tm-winecomponents-carousel').slick({
+                dots: true,
+                prevArrow: false,
+                nextArrow: false,
+                infinite: false,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                responsive: [{
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 2
+                    }
+                }, {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 2
+                    }
+                }, {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1
+                    }
+                }]
+            });
+
+            // Gallery
+            $('.tm-gallery').slick({
+                dots: true,
+                infinite: false,
+                slidesToShow: 5,
+                slidesToScroll: 2,
+                responsive: [{
+                    breakpoint: 1199,
+                    settings: {
+                        slidesToShow: 4,
+                        slidesToScroll: 2
+                    }
+                }, {
+                    breakpoint: 991,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 2
+                    }
+                }, {
+                    breakpoint: 767,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1
+                    }
+                }, {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }]
+            });
+        });
+    </script>
+</body>
+
+</html>
