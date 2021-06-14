@@ -1,16 +1,11 @@
 # Final Project: Wine Quality
 
-Annette Broeren  
-Tanlin Hung  
-Rick Spitzer  
-Kate Spitzer
+Collaborated with Annette Broeren, Tanlin Hung, Kate Spitzer
 
 
-
-To run our wine quality site, visit:  https://ucsd-winequality.herokuapp.com/
+To run the wine quality site, visit:  https://ucsd-winequality.herokuapp.com/
 
 To take a look at the code, go here: https://github.com/kmspitzer/final-wineproject
-
 
 
 # Purpose
@@ -28,7 +23,7 @@ The two datasets are related to red and white variants of the Portuguese "Vinho 
 
 These datasets can be viewed as classification or regression tasks. The classes are ordered and not balanced (e.g. there are many more normal wines than excellent or poor ones). Outlier detection algorithms could be used to detect the few excellent or poor wines. Also, we are not sure if all input variables are relevant. So it could be interesting to test feature selection methods.
 
-We chose to concentrate on the red wine data.
+The red wine data was the focus for this analysis.
 
 ## Citation Requested:
 {}. Cortez, A. Cerdeira, F. Almeida, T. Matos and J. Reis.
@@ -92,7 +87,7 @@ Once we normalized the data, we explored several classifiers:
     Gradient Boost Classifier
     XGB Classifier
 
-Our machine learning models were run with varying percentages of train and test data, ranging from a 75/25 split to 80/20. Our results ranged from 69% to 95%, the highest being from the Random Forest Regression, Random Forest, and XGBoost models. We were pretty happy with our 95% scores, which are pretty great if you ask us: that could make some pretty reliable wine-making! Once the model was established, we created several super-interesting graphs that you can find on the deployed app.
+The machine learning models were run with varying percentages of train and test data, ranging from a 75/25 split to 80/20. The results ranged from 69% to 95%, the highest being from the Random Forest Regression, Random Forest, and XGBoost models. We were pretty happy with our 95% scores, which are pretty great if you ask us: that could make some pretty reliable wine-making! Once the model was established, we created several super-interesting graphs that you can find on the deployed app.
 
 # Deployment
 The app has been deployed here:  https://ucsd-winequality.herokuapp.com/.  Check it out!  Look at the awesome graphs that Tanlin and Rick produced.  Play around with the beautiful gauge that Kate made!  Have a taste ... dream about what's possible ... 
